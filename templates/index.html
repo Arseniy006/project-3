@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Генератор списков</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Генератор HTML-списков</h2>
+        <form method="POST" action="/generate-list">
+            <label for="items">Элементы списка (разделяйте запятыми):</label>
+            <textarea id="items" name="items" rows="5" required></textarea>
+            
+            <label for="list_type">Тип списка:</label>
+            <select id="list_type" name="list_type" required>
+                <option value="bulleted">Маркированный</option>
+                <option value="numbered">Нумерованный</option>
+            </select>
+            
+            <input type="submit" value="Сгенерировать список">
+        </form>
+    </div>
+</body>
+</html>
